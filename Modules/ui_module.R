@@ -1,4 +1,4 @@
-source("Modules/filter_module.R")
+
 sidebarUI <- function(id, modelInput) {
   ns <- NS(id)
   tagList(
