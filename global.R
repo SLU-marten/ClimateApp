@@ -1,3 +1,3 @@
-nursery <- read.csv2("Data/Nursery.csv")
-potSpawn <- read.csv2("Data/pot_spawn.csv")
-names(potSpawn)[1] <- names(nursery)[1] <- "Species"
+library(readr)
+nursery <- read_delim("Data/Nursery.csv", locale = locale(decimal_mark = ","),  show_col_types = FALSE)
+potSpawn <- read_delim("Data/pot_spawn.csv", locale = locale(decimal_mark = ","), show_col_types = FALSE)
